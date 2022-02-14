@@ -63,6 +63,9 @@ COPY ./NuGet.config ${HOME}/nuget.config
 RUN chown -R ${NB_UID} ${HOME}
 USER ${USER}
 
+# Ubuntu version checker
+lsb_release -a
+
 # Install Microsoft.DotNet.Interactive
 RUN dotnet tool install -g dotnet-try --add-source "https://dotnet.myget.org/F/dotnet-try/api/v3/index.json"
 
