@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook:10c58da
+FROM jupyter/scipy-notebook:a6fc0cfbd01b
 
 # Environment variables and args
 
